@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+header, main {
+    margin: 87px 120px;
+}
+
+/* -------------------------Header Part--------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --------------------------Banner Section--------------------------- */
+.banner {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+
+}
+
+.banner div {
+    width: 50%;
+}
+
+.banner-info h1 {
+    font-size: 52px;
+}
+
+.banner-info {
+    width: 582px;
+}
+
+.banner-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    margin-top: -16px;
+}
+
+.banner-info button {
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    background-color: #E02C60;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.banner-img img {
+    width: 440px;
+    height: 414px;
+    margin-left: 350px;
+}
+/* ---------------------------Site Link Section----------------------- */
+
+.site-link {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 61px;
+    margin: 100px 165px;
+}
+/* ------------------------------------------------------------------- */
+
+
+    
+/* ----------------------MobiLe Device------------------------------- */
+    @media screen and (max-width:576px) {
+        header, main {
+            margin: 35px 0px;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        nav > h2{
+            text-align: center;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+    }
+
+
+
+/* ----------------------Tablet Device-------------------------------- */
