@@ -8,6 +8,10 @@ main {
     margin: 87px 120px;
 }
 
+.main {
+    margin: 0 196px 87px 196px;
+}
+
 /* -------------------------Header Part--------------------------------*/
 nav {
     display: flex;
@@ -38,6 +42,7 @@ li a {
     align-items: center;
 
 }
+
 .banner-info {
     width: 582px;
 }
@@ -81,9 +86,23 @@ li a {
     margin: 100px 165px;
 }
 
-/* ------------------------------------------------------------------- */
+/* ----------------------Collection Section--------------------------- */
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: bisque;
+}
 
+.collection {
+    background-color: white;
+    padding: 17px 0 17px 110px;
+    margin: 10px;
+}
 
+.collection-title {
+    text-align: center;
+}
 
 /* ----------------------MobiLe Device------------------------------- */
 @media screen and (max-width:576px) {
@@ -118,31 +137,51 @@ li a {
         height: 190px;
         margin-left: 0;
     }
+
     .banner-info {
         margin-top: -30px;
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 28px;
     }
-    .banner-detail{
-        font-size: 14px;  
+
+    .banner-detail {
+        font-size: 14px;
     }
+
     .banner-info button {
         float: none;
         margin: 0 auto;
     }
-    
+
     /* site responsive */
     .site-link {
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
         row-gap: 21px;
         margin: 50px 42px;
     }
-    .site-link img{
+
+    .site-link img {
         width: 40px;
+    }
+
+    /* collection responsive */
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .collection {
+        padding: 17px 0 17px 20px;
+    }
+
+    .collection img {
+        width: 300px;
+        height: 256px;
     }
 }
 
@@ -152,17 +191,19 @@ li a {
     header,
     main {
         margin: 35px 30px;
-    };
+    }
+
+    ;
     /* banner responsive */
-    
+
     .banner-info {
         width: 100%;
     }
-    
-    .banner-img{
+
+    .banner-img {
         margin-right: 25px;
     }
-    
+
     .banner-img img {
         width: 100%;
         height: 100%;
@@ -172,11 +213,29 @@ li a {
     /* site responsive */
     .site-link {
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
         row-gap: 31px;
         margin: 80px 0;
     }
-    .site-link img{
+
+    .site-link img {
         width: 90px;
     }
+
+    /* collection responsive */
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .collection {
+        padding: 20px 0 17px 20px;
+    }
+
+    .collection img {
+        width: 300px;
+        height: 256px;
+    }
+
 }
